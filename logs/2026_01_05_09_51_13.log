@@ -1,0 +1,25 @@
+2026-01-05 09:51:13,584 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: daun-lebar-villas
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-01-05 09:51:13,585 - root - INFO - Creating URLs
+2026-01-05 09:51:13,585 - root - INFO - Checking max offset parameter value
+2026-01-05 09:51:14,339 - root - INFO - Offset parameter max value: 110
+2026-01-05 09:51:14,341 - root - INFO - Created URLs: 12
+2026-01-05 09:51:14,342 - root - INFO - Progress Monitoring Thread Started
+2026-01-05 09:51:14,342 - root - INFO - Starting Get Requests on 12 urls
+2026-01-05 09:51:16,015 - root - INFO - Finished Get Requests in 1.7 seconds
+2026-01-05 09:51:16,015 - root - INFO - Starting Parsing Responses: 12
+2026-01-05 09:51:16,024 - root - INFO - Processes launched: 5
+2026-01-05 09:51:16,349 - root - INFO - Processed 7/12
+2026-01-05 09:51:16,564 - root - INFO - Finished Parsing Responses: 116 in 2.2 seconds
+2026-01-05 09:51:16,576 - root - INFO - Process complete 3.0 seconds
+2026-01-05 09:51:16,576 - root - INFO - Reviews found: 116
+2026-01-05 09:51:18,352 - root - INFO - Processed 12/12

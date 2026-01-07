@@ -1,0 +1,24 @@
+2025-12-08 13:15:06,453 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: pondok-pitaya
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2025-12-08 13:15:06,453 - root - INFO - Creating URLs
+2025-12-08 13:15:06,453 - root - INFO - Checking max offset parameter value
+2025-12-08 13:15:07,563 - root - INFO - Offset parameter max value: 250
+2025-12-08 13:15:07,566 - root - INFO - Created URLs: 26
+2025-12-08 13:15:07,566 - root - INFO - Progress Monitoring Thread Started
+2025-12-08 13:15:07,567 - root - INFO - Starting Get Requests on 26 urls
+2025-12-08 13:15:10,311 - root - INFO - Finished Get Requests in 2.7 seconds
+2025-12-08 13:15:10,311 - root - INFO - Starting Parsing Responses: 26
+2025-12-08 13:15:10,324 - root - INFO - Processes launched: 5
+2025-12-08 13:15:11,395 - root - INFO - Finished Parsing Responses: 257 in 3.8 seconds
+2025-12-08 13:15:11,430 - root - INFO - Process complete 5.0 seconds
+2025-12-08 13:15:11,431 - root - INFO - Reviews found: 257
+2025-12-08 13:15:11,575 - root - INFO - Processed 26/26
