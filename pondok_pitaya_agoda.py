@@ -5,7 +5,7 @@ import time
 import random
 import re # Tambahkan library Regex untuk ambil angka
 
-def scrape_agoda_pagination(url, output_filename="agoda_reviews_final.csv"):
+def scrape_agoda_pagination(url, output_filename="agoda_reviews_9_1_2026.csv"):
     unique_reviews = set() 
     reviews_data = []
 
