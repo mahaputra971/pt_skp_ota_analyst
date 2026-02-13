@@ -1,0 +1,24 @@
+2026-02-13 11:49:44,539 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: gajah-mina-beach-resort-tabanan
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-02-13 11:49:44,540 - root - INFO - Creating URLs
+2026-02-13 11:49:44,541 - root - INFO - Checking max offset parameter value
+2026-02-13 11:49:45,408 - root - INFO - Offset parameter max value: 290
+2026-02-13 11:49:45,413 - root - INFO - Created URLs: 30
+2026-02-13 11:49:45,413 - root - INFO - Progress Monitoring Thread Started
+2026-02-13 11:49:45,414 - root - INFO - Starting Get Requests on 30 urls
+2026-02-13 11:49:48,459 - root - INFO - Finished Get Requests in 3.0 seconds
+2026-02-13 11:49:48,460 - root - INFO - Starting Parsing Responses: 30
+2026-02-13 11:49:48,483 - root - INFO - Processes launched: 5
+2026-02-13 11:49:49,072 - root - INFO - Finished Parsing Responses: 291 in 3.7 seconds
+2026-02-13 11:49:49,116 - root - INFO - Process complete 4.6 seconds
+2026-02-13 11:49:49,116 - root - INFO - Reviews found: 291
+2026-02-13 11:49:49,421 - root - INFO - Processed 30/30

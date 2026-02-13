@@ -1,0 +1,24 @@
+2026-02-13 11:31:10,109 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: gubug-balian-beach-bungalow
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-02-13 11:31:10,109 - root - INFO - Creating URLs
+2026-02-13 11:31:10,110 - root - INFO - Checking max offset parameter value
+2026-02-13 11:31:10,869 - root - INFO - Offset parameter max value: 790
+2026-02-13 11:31:10,878 - root - INFO - Created URLs: 80
+2026-02-13 11:31:10,878 - root - INFO - Progress Monitoring Thread Started
+2026-02-13 11:31:10,878 - root - INFO - Starting Get Requests on 80 urls
+2026-02-13 11:31:18,926 - root - INFO - Finished Get Requests in 8.0 seconds
+2026-02-13 11:31:18,927 - root - INFO - Starting Parsing Responses: 80
+2026-02-13 11:31:18,951 - root - INFO - Processes launched: 5
+2026-02-13 11:31:20,598 - root - INFO - Finished Parsing Responses: 791 in 9.7 seconds
+2026-02-13 11:31:20,714 - root - INFO - Process complete 10.6 seconds
+2026-02-13 11:31:20,714 - root - INFO - Reviews found: 791
+2026-02-13 11:31:20,908 - root - INFO - Processed 80/80

@@ -3,9 +3,20 @@ from bs4 import BeautifulSoup
 import csv
 import time
 import random
-import re # Tambahkan library Regex untuk ambil angka
+import re
+import os # Tambahkan OS untuk membuat folder otomatis
 
-def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_reviews.csv"):
+# Hapus default value yang error, biarkan argumen output_filename ditangani di dalam atau saat pemanggilan
+def scrape_agoda_pagination(url, output_filename=None):
+    # Jika output_filename tidak diisi, generate otomatis dari URL
+    if output_filename is None:
+        # Ambil nama hotel dari URL (misal: daun-lebar-villas)
+        hotel_name = url.split('/')[-3] if len(url.split('/')) > 3 else "agoda_result"
+        # Pastikan folder ada
+        if not os.path.exists("dataset_agoda"):
+            os.makedirs("dataset_agoda")
+        output_filename = f"dataset_agoda/{hotel_name}.csv"
+
     unique_reviews = set() 
     reviews_data = []
 
@@ -17,8 +28,12 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
         page = context.new_page()
         
         print(f"Mengakses: {url}")
-        page.goto(url, timeout=90000)
-        time.sleep(5) 
+        try:
+            page.goto(url, timeout=90000)
+            time.sleep(5) 
+        except Exception as e:
+            print(f"Gagal membuka URL: {e}")
+            return
 
         page_num = 1
         
@@ -33,13 +48,11 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
             new_reviews_found = 0
             for review in review_elements:
                 try:
-                    # 1. AMBIL RATING DULU (Filter Hantu)
+                    # 1. AMBIL RATING
                     rating_el = review.find('div', class_=lambda x: x and 'Review-comment-leftScore' in x)
                     rating = rating_el.text.strip() if rating_el else "N/A"
 
-                    # Skip jika tidak ada rating (berarti ini div duplikat/invalid)
-                    if rating == "N/A": 
-                        continue
+                    if rating == "N/A": continue
 
                     # 2. Text Review
                     text_el = review.find('p', class_=lambda x: x and 'Review-comment-bodyText' in x)
@@ -53,20 +66,19 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
                     if date_container:
                         review_date = date_container.text.replace("Reviewed", "").strip()
 
-                    # 4. Metadata (Nama, Negara, Tipe Kamar)
+                    # 4. Metadata
                     reviewer_container = review.find('div', {'data-info-type': 'reviewer-name'})
                     reviewer_name = "Anonymous"
                     user_country = "N/A"
 
                     if reviewer_container:
-                        # Nama
                         name_tag = reviewer_container.find('strong')
                         if name_tag:
                             reviewer_name = name_tag.text.strip()
                         else:
-                            reviewer_name = reviewer_container.text.split(" from ")[0].strip()
+                            parts = reviewer_container.text.split(" from ")
+                            reviewer_name = parts[0].strip()
                         
-                        # Negara
                         spans = reviewer_container.find_all('span')
                         if spans:
                             user_country = spans[-1].text.strip()
@@ -75,19 +87,16 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
                     room_el = review.find('div', {'data-info-type': 'room-type'})
                     room_type = room_el.text.strip() if room_el else "N/A"
 
-                    # 5. STAY DURATION (AMBIL ANGKA SAJA)
+                    # 5. STAY DURATION
                     stay_el = review.find('div', {'data-info-type': 'stay-detail'})
                     stay_duration_days = "N/A"
                     
                     if stay_el:
-                        full_stay_text = stay_el.text.strip() # ex: "Stayed 5 nights in January 2025"
-                        
-                        # Logic Regex: Cari angka (\d+) setelah kata "Stayed"
+                        full_stay_text = stay_el.text.strip()
                         match = re.search(r'Stayed\s+(\d+)\s+night', full_stay_text, re.IGNORECASE)
                         if match:
-                            stay_duration_days = match.group(1) # Ambil angkanya saja (misal: "5")
+                            stay_duration_days = match.group(1)
                         else:
-                            # Fallback jika format teks beda (misal cuma "Stayed 1 night")
                             stay_duration_days = "1" if "1 night" in full_stay_text.lower() else full_stay_text
 
                     # 6. SIMPAN DATA
@@ -99,7 +108,7 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
                             'reviewer_name': reviewer_name,
                             'user_country': user_country,
                             'room_type': room_type,
-                            'stay_duration_days': stay_duration_days, # Kolom Baru (Angka)
+                            'stay_duration_days': stay_duration_days,
                             'rating': rating,
                             'review_text': review_text,
                             'review_date': review_date
@@ -120,12 +129,16 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
                     print("Tombol Next disabled. Ini halaman terakhir.")
                     break
                 
-                print("Klik Next Page >>")
                 try:
-                    next_button.evaluate("element => element.click()")
+                    next_button.scroll_into_view_if_needed()
+                    next_button.click()
+                    print("Klik Next Page >>")
                 except Exception as e:
-                    print(f"Gagal klik next: {e}")
-                    break
+                    print(f"Gagal klik next (mencoba JS click): {e}")
+                    try:
+                         next_button.evaluate("element => element.click()")
+                    except:
+                        break
                 
                 time.sleep(random.uniform(4, 6)) 
                 page_num += 1
@@ -138,6 +151,8 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
     if reviews_data:
         print(f"\nMenyimpan {len(reviews_data)} data bersih ke {output_filename}...")
         keys = reviews_data[0].keys()
+        
+        # Mode 'w' akan menimpa file lama, 'a' untuk append (tapi header harus dijaga)
         with open(output_filename, 'w', newline='', encoding='utf-8') as output_file:
             dict_writer = csv.DictWriter(output_file, keys)
             dict_writer.writeheader()
@@ -146,7 +161,12 @@ def scrape_agoda_pagination(url, output_filename="dataset_agoda/dlv_agoda_review
     else:
         print("Tidak ada review yang ditemukan.")
 
-target_url = "https://www.agoda.com/id-id/daun-lebar-villas/hotel/bali-id.html"
-
 if __name__ == "__main__":
-    scrape_agoda_pagination(target_url)
+    # Input URL diletakkan di blok main
+    target_url_input = input("Masukkan URL Agoda: ").strip()
+    
+    # Validasi input sederhana
+    if target_url_input:
+        scrape_agoda_pagination(target_url_input)
+    else:
+        print("URL tidak boleh kosong.")
