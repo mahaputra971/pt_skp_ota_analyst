@@ -1,0 +1,26 @@
+2026-05-11 01:07:57,370 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: c-39-smart-stay-kabupaten-buleleng
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-11 01:07:57,371 - root - INFO - Creating URLs
+2026-05-11 01:07:57,371 - root - INFO - Checking max offset parameter value
+2026-05-11 01:07:57,640 - root - INFO - No offset parameter found
+2026-05-11 01:07:57,641 - root - INFO - Created URLs: 1
+2026-05-11 01:07:57,641 - root - INFO - Progress Monitoring Thread Started
+2026-05-11 01:07:57,641 - root - INFO - Starting Get Requests on 1 urls
+2026-05-11 01:07:57,823 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=
+2026-05-11 01:07:58,006 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=
+2026-05-11 01:07:58,598 - root - INFO - Finished Get Requests in 1.0 seconds
+2026-05-11 01:07:58,599 - root - INFO - Starting Parsing Responses: 1
+2026-05-11 01:07:58,605 - root - INFO - Processes launched: 1
+2026-05-11 01:07:58,709 - root - INFO - Finished Parsing Responses: 10 in 1.1 seconds
+2026-05-11 01:07:58,711 - root - INFO - Process complete 1.3 seconds
+2026-05-11 01:07:58,711 - root - INFO - Reviews found: 10
+2026-05-11 01:07:59,645 - root - INFO - Processed 1/1

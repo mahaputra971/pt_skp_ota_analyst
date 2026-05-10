@@ -1,0 +1,33 @@
+2026-05-11 01:08:23,783 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: c-39-smart-stay-kabupaten-buleleng
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-11 01:08:23,783 - root - INFO - Creating URLs
+2026-05-11 01:08:23,783 - root - INFO - Checking max offset parameter value
+2026-05-11 01:08:24,549 - root - INFO - Offset parameter max value: 70
+2026-05-11 01:08:24,551 - root - INFO - Created URLs: 8
+2026-05-11 01:08:24,551 - root - INFO - Progress Monitoring Thread Started
+2026-05-11 01:08:24,551 - root - INFO - Starting Get Requests on 8 urls
+2026-05-11 01:08:24,862 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=10
+2026-05-11 01:08:24,891 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=50
+2026-05-11 01:08:24,892 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=30
+2026-05-11 01:08:24,902 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=60
+2026-05-11 01:08:25,060 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=10
+2026-05-11 01:08:25,120 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=50
+2026-05-11 01:08:25,126 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=60
+2026-05-11 01:08:25,240 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=10
+2026-05-11 01:08:25,305 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=c-39-smart-stay-kabupaten-buleleng&rows=10&sort=&offset=50
+2026-05-11 01:08:25,767 - root - INFO - Finished Get Requests in 1.2 seconds
+2026-05-11 01:08:25,767 - root - INFO - Starting Parsing Responses: 8
+2026-05-11 01:08:25,776 - root - INFO - Processes launched: 5
+2026-05-11 01:08:26,069 - root - INFO - Finished Parsing Responses: 53 in 1.5 seconds
+2026-05-11 01:08:26,078 - root - INFO - Process complete 2.3 seconds
+2026-05-11 01:08:26,078 - root - INFO - Reviews found: 53
+2026-05-11 01:08:26,554 - root - INFO - Processed 8/8
