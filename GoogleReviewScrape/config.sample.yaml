@@ -216,12 +216,12 @@ json_path: "google_reviews.json"
 #
 # Advanced setup (per-business overrides):
 businesses:
-  - url: "https://maps.app.goo.gl/PLACE_1"
+  - url: "https://maps.app.goo.gl/7cXoi26mj1mYFqT17"
     custom_params:
       company: "Company A"
       source: "Google Maps"
 
-  - url: "https://maps.app.goo.gl/PLACE_2"
+  - url: "https://maps.app.goo.gl/7cXoi26mj1mYFqT17"
     custom_params:
       company: "Company B"
       source: "Google Maps"
