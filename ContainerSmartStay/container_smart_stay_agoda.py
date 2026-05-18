@@ -5,9 +5,12 @@ import time
 import random
 import re 
 
-def scrape_agoda_pagination(url, output_filename="agoda_reviews_9_1_2026.csv"):
+def scrape_agoda_pagination(url, output_filename=None):
     unique_reviews = set() 
     reviews_data = []
+
+    if not output_filename:
+        output_filename = f"agoda_css_{time.strftime('%Y%m%d_%H%M%S')}.csv"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
