@@ -1,0 +1,66 @@
+2026-05-29 14:20:27,815 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: yoga-above-the-clouds
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-29 14:20:27,816 - root - INFO - Creating URLs
+2026-05-29 14:20:27,816 - root - INFO - Checking max offset parameter value
+2026-05-29 14:20:28,686 - root - INFO - Offset parameter max value: 410
+2026-05-29 14:20:28,691 - root - INFO - Created URLs: 42
+2026-05-29 14:20:28,692 - root - INFO - Progress Monitoring Thread Started
+2026-05-29 14:20:28,692 - root - INFO - Starting Get Requests on 42 urls
+2026-05-29 14:20:29,253 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=80
+2026-05-29 14:20:29,253 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=50
+2026-05-29 14:20:29,254 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=
+2026-05-29 14:20:29,527 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=
+2026-05-29 14:20:29,538 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=80
+2026-05-29 14:20:29,643 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=60
+2026-05-29 14:20:29,644 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=90
+2026-05-29 14:20:29,716 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=
+2026-05-29 14:20:29,850 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=60
+2026-05-29 14:20:29,863 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=90
+2026-05-29 14:20:29,869 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=70
+2026-05-29 14:20:29,918 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=10
+2026-05-29 14:20:29,926 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=40
+2026-05-29 14:20:29,932 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=120
+2026-05-29 14:20:29,936 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=110
+2026-05-29 14:20:29,937 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=100
+2026-05-29 14:20:30,197 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=10
+2026-05-29 14:20:30,282 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=110
+2026-05-29 14:20:30,521 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=110
+2026-05-29 14:20:30,608 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=150
+2026-05-29 14:20:30,802 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=150
+2026-05-29 14:20:31,060 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=150
+2026-05-29 14:20:31,248 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=250
+2026-05-29 14:20:31,384 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=280
+2026-05-29 14:20:31,440 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=250
+2026-05-29 14:20:31,474 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=290
+2026-05-29 14:20:31,575 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=280
+2026-05-29 14:20:31,681 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=290
+2026-05-29 14:20:31,745 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=280
+2026-05-29 14:20:31,857 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=290
+2026-05-29 14:20:31,988 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=320
+2026-05-29 14:20:31,992 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=300
+2026-05-29 14:20:32,006 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=340
+2026-05-29 14:20:32,014 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=350
+2026-05-29 14:20:32,031 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=360
+2026-05-29 14:20:32,229 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=300
+2026-05-29 14:20:32,265 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=340
+2026-05-29 14:20:32,266 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=370
+2026-05-29 14:20:32,412 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=300
+2026-05-29 14:20:32,484 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=380
+2026-05-29 14:20:32,487 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=370
+2026-05-29 14:20:32,681 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=yoga-above-the-clouds&rows=10&sort=&offset=380
+2026-05-29 14:20:33,318 - root - INFO - Finished Get Requests in 4.6 seconds
+2026-05-29 14:20:33,318 - root - INFO - Starting Parsing Responses: 42
+2026-05-29 14:20:33,342 - root - INFO - Processes launched: 5
+2026-05-29 14:20:34,151 - root - INFO - Finished Parsing Responses: 351 in 5.5 seconds
+2026-05-29 14:20:34,216 - root - INFO - Process complete 6.4 seconds
+2026-05-29 14:20:34,216 - root - INFO - Reviews found: 351
+2026-05-29 14:20:34,704 - root - INFO - Processed 42/42

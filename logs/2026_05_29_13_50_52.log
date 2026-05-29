@@ -1,0 +1,104 @@
+2026-05-29 13:50:52,930 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: pondok-nyoman
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-29 13:50:52,930 - root - INFO - Creating URLs
+2026-05-29 13:50:52,930 - root - INFO - Checking max offset parameter value
+2026-05-29 13:50:54,374 - root - INFO - Offset parameter max value: 790
+2026-05-29 13:50:54,385 - root - INFO - Created URLs: 80
+2026-05-29 13:50:54,385 - root - INFO - Progress Monitoring Thread Started
+2026-05-29 13:50:54,386 - root - INFO - Starting Get Requests on 80 urls
+2026-05-29 13:50:54,723 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=
+2026-05-29 13:50:54,730 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=20
+2026-05-29 13:50:54,735 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=60
+2026-05-29 13:50:54,745 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=80
+2026-05-29 13:50:54,902 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=20
+2026-05-29 13:50:54,936 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=60
+2026-05-29 13:50:54,939 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=80
+2026-05-29 13:50:55,076 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=20
+2026-05-29 13:50:55,157 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=60
+2026-05-29 13:50:55,776 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=160
+2026-05-29 13:50:55,777 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=100
+2026-05-29 13:50:55,778 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=150
+2026-05-29 13:50:55,779 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=130
+2026-05-29 13:50:55,781 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=190
+2026-05-29 13:50:56,052 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=150
+2026-05-29 13:50:56,058 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=190
+2026-05-29 13:50:56,060 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=100
+2026-05-29 13:50:56,335 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=190
+2026-05-29 13:50:56,338 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=100
+2026-05-29 13:50:56,716 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=200
+2026-05-29 13:50:56,720 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=210
+2026-05-29 13:50:56,731 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=240
+2026-05-29 13:50:56,747 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=260
+2026-05-29 13:50:56,754 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=270
+2026-05-29 13:50:56,755 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=280
+2026-05-29 13:50:57,009 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=200
+2026-05-29 13:50:57,171 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=200
+2026-05-29 13:50:57,721 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=300
+2026-05-29 13:50:57,746 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=330
+2026-05-29 13:50:57,752 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=360
+2026-05-29 13:50:57,767 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=370
+2026-05-29 13:50:57,773 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=380
+2026-05-29 13:50:57,774 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=340
+2026-05-29 13:50:57,893 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=300
+2026-05-29 13:50:57,951 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=330
+2026-05-29 13:50:57,975 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=370
+2026-05-29 13:50:57,986 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=340
+2026-05-29 13:50:57,991 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=380
+2026-05-29 13:50:58,045 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=300
+2026-05-29 13:50:58,132 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=330
+2026-05-29 13:50:58,167 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=370
+2026-05-29 13:50:58,172 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=340
+2026-05-29 13:50:58,726 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=400
+2026-05-29 13:50:58,729 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=410
+2026-05-29 13:50:58,735 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=420
+2026-05-29 13:50:58,746 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=470
+2026-05-29 13:50:58,755 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=460
+2026-05-29 13:50:58,942 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=420
+2026-05-29 13:50:58,954 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=410
+2026-05-29 13:50:58,961 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=400
+2026-05-29 13:50:58,964 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=470
+2026-05-29 13:50:58,977 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=460
+2026-05-29 13:50:59,164 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=420
+2026-05-29 13:50:59,177 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=410
+2026-05-29 13:50:59,185 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=470
+2026-05-29 13:50:59,722 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=520
+2026-05-29 13:50:59,727 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=540
+2026-05-29 13:50:59,733 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=550
+2026-05-29 13:50:59,742 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=560
+2026-05-29 13:50:59,759 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=570
+2026-05-29 13:50:59,922 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=520
+2026-05-29 13:50:59,979 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=560
+2026-05-29 13:51:00,003 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=570
+2026-05-29 13:51:00,006 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=550
+2026-05-29 13:51:00,222 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=570
+2026-05-29 13:51:00,230 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=400
+2026-05-29 13:51:00,700 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=610
+2026-05-29 13:51:00,713 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=620
+2026-05-29 13:51:00,893 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=610
+2026-05-29 13:51:01,061 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=610
+2026-05-29 13:51:01,224 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=690
+2026-05-29 13:51:01,400 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=690
+2026-05-29 13:51:01,584 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=690
+2026-05-29 13:51:01,756 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=730
+2026-05-29 13:51:01,758 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=760
+2026-05-29 13:51:01,761 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=750
+2026-05-29 13:51:01,769 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=740
+2026-05-29 13:51:01,802 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=770
+2026-05-29 13:51:01,997 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=730
+2026-05-29 13:51:02,019 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=pondok-nyoman&rows=10&sort=&offset=770
+2026-05-29 13:51:02,604 - root - INFO - Finished Get Requests in 8.2 seconds
+2026-05-29 13:51:02,604 - root - INFO - Starting Parsing Responses: 80
+2026-05-29 13:51:02,639 - root - INFO - Processes launched: 5
+2026-05-29 13:51:04,070 - root - INFO - Finished Parsing Responses: 634 in 9.7 seconds
+2026-05-29 13:51:04,384 - root - INFO - Process complete 11.5 seconds
+2026-05-29 13:51:04,384 - root - INFO - Reviews found: 634
+2026-05-29 13:51:04,416 - root - INFO - Processed 80/80

@@ -1,0 +1,81 @@
+2026-05-29 14:26:39,667 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: strawberry-hill-amp-restaurant
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-29 14:26:39,668 - root - INFO - Creating URLs
+2026-05-29 14:26:39,668 - root - INFO - Checking max offset parameter value
+2026-05-29 14:26:40,319 - root - INFO - Offset parameter max value: 550
+2026-05-29 14:26:40,326 - root - INFO - Created URLs: 56
+2026-05-29 14:26:40,327 - root - INFO - Progress Monitoring Thread Started
+2026-05-29 14:26:40,328 - root - INFO - Starting Get Requests on 56 urls
+2026-05-29 14:26:40,711 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=30
+2026-05-29 14:26:40,717 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=70
+2026-05-29 14:26:40,718 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=80
+2026-05-29 14:26:40,727 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=40
+2026-05-29 14:26:40,946 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=70
+2026-05-29 14:26:41,700 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=100
+2026-05-29 14:26:41,707 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=110
+2026-05-29 14:26:41,713 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=180
+2026-05-29 14:26:41,714 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=120
+2026-05-29 14:26:41,719 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=170
+2026-05-29 14:26:41,723 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=140
+2026-05-29 14:26:41,736 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=190
+2026-05-29 14:26:41,939 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=100
+2026-05-29 14:26:41,982 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=110
+2026-05-29 14:26:41,994 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=170
+2026-05-29 14:26:41,999 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=140
+2026-05-29 14:26:42,001 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=190
+2026-05-29 14:26:42,006 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=180
+2026-05-29 14:26:42,151 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=100
+2026-05-29 14:26:42,214 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=110
+2026-05-29 14:26:42,245 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=180
+2026-05-29 14:26:42,247 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=190
+2026-05-29 14:26:42,669 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=240
+2026-05-29 14:26:42,670 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=210
+2026-05-29 14:26:42,687 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=220
+2026-05-29 14:26:42,755 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=280
+2026-05-29 14:26:42,798 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=290
+2026-05-29 14:26:42,936 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=280
+2026-05-29 14:26:42,983 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=290
+2026-05-29 14:26:43,169 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=290
+2026-05-29 14:26:43,666 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=330
+2026-05-29 14:26:43,669 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=300
+2026-05-29 14:26:43,803 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=380
+2026-05-29 14:26:43,857 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=300
+2026-05-29 14:26:43,906 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=340
+2026-05-29 14:26:44,084 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=340
+2026-05-29 14:26:44,275 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=340
+2026-05-29 14:26:44,733 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=400
+2026-05-29 14:26:44,744 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=440
+2026-05-29 14:26:44,745 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=430
+2026-05-29 14:26:44,750 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=450
+2026-05-29 14:26:44,751 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=410
+2026-05-29 14:26:44,752 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=490
+2026-05-29 14:26:44,803 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=480
+2026-05-29 14:26:45,033 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=440
+2026-05-29 14:26:45,042 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=490
+2026-05-29 14:26:45,047 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=410
+2026-05-29 14:26:45,051 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=400
+2026-05-29 14:26:45,247 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=410
+2026-05-29 14:26:45,565 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=510
+2026-05-29 14:26:45,567 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=500
+2026-05-29 14:26:45,641 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=540
+2026-05-29 14:26:45,643 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=550
+2026-05-29 14:26:45,767 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=500
+2026-05-29 14:26:45,835 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=550
+2026-05-29 14:26:46,039 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=550
+2026-05-29 14:26:46,259 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=&offset=400
+2026-05-29 14:26:46,392 - root - INFO - Finished Get Requests in 6.1 seconds
+2026-05-29 14:26:46,393 - root - INFO - Starting Parsing Responses: 56
+2026-05-29 14:26:46,412 - root - INFO - Processes launched: 5
+2026-05-29 14:26:47,385 - root - INFO - Finished Parsing Responses: 470 in 7.1 seconds
+2026-05-29 14:26:47,467 - root - INFO - Process complete 7.8 seconds
+2026-05-29 14:26:47,468 - root - INFO - Reviews found: 470
+2026-05-29 14:26:48,350 - root - INFO - Processed 56/56

@@ -1,0 +1,25 @@
+2026-05-29 14:26:35,632 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: strawberry-hill-amp-restaurant
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-29 14:26:35,632 - root - INFO - Creating URLs
+2026-05-29 14:26:35,632 - root - INFO - Checking max offset parameter value
+2026-05-29 14:26:35,961 - root - INFO - No offset parameter found
+2026-05-29 14:26:35,962 - root - INFO - Created URLs: 1
+2026-05-29 14:26:35,963 - root - INFO - Progress Monitoring Thread Started
+2026-05-29 14:26:35,963 - root - INFO - Starting Get Requests on 1 urls
+2026-05-29 14:26:36,192 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=strawberry-hill-amp-restaurant&rows=10&sort=
+2026-05-29 14:26:36,988 - root - INFO - Finished Get Requests in 1.0 seconds
+2026-05-29 14:26:36,988 - root - INFO - Starting Parsing Responses: 1
+2026-05-29 14:26:36,990 - root - INFO - Processes launched: 1
+2026-05-29 14:26:37,103 - root - INFO - Finished Parsing Responses: 10 in 1.1 seconds
+2026-05-29 14:26:37,106 - root - INFO - Process complete 1.5 seconds
+2026-05-29 14:26:37,106 - root - INFO - Reviews found: 10
+2026-05-29 14:26:37,972 - root - INFO - Processed 1/1
