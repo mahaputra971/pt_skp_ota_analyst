@@ -1,5 +1,7 @@
+import os
 import time
 import re
+import shutil
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 
@@ -168,6 +170,7 @@ def generate_date_ranges(start_date: str, end_date: str) -> List[tuple]:
         current = next_day
     return ranges
 
+<<<<<<< Updated upstream
 
 def setup_driver() -> webdriver.Chrome:
     opts = Options()
@@ -175,13 +178,84 @@ def setup_driver() -> webdriver.Chrome:
     # opts.add_argument("--headless=new")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--no-sandbox")
+=======
+
+def find_chrome_binary() -> Optional[str]:
+    """Cari binary Chrome/Chromium yang tersedia di sistem."""
+    candidates = [
+        "google-chrome",
+        "google-chrome-stable",
+        "chromium-browser",
+        "chromium",
+        "/usr/bin/google-chrome",
+        "/usr/bin/chromium-browser",
+        "/usr/bin/chromium",
+        "/snap/bin/chromium",
+    ]
+    for c in candidates:
+        path = shutil.which(c) or (c if os.path.isfile(c) else None)
+        if path:
+            return path
+    return None
+
+
+def setup_driver() -> webdriver.Chrome:
+    opts = Options()
+
+    # ── Wajib untuk WSL / server tanpa display ────────────────────────────────
+    opts.add_argument("--headless=new")
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-gpu")
+    opts.add_argument("--disable-software-rasterizer")
+    opts.add_argument("--disable-extensions")
+    opts.add_argument("--disable-setuid-sandbox")
+    opts.add_argument("--remote-debugging-port=0")
+>>>>>>> Stashed changes
     opts.add_argument("--window-size=1920,1080")
     opts.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     )
+<<<<<<< Updated upstream
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=opts)
+=======
+
+    # Tunjuk binary Chrome secara eksplisit
+    chrome_bin = find_chrome_binary()
+    if chrome_bin:
+        print(f"  [Chrome] Menggunakan binary: {chrome_bin}")
+        opts.binary_location = chrome_bin
+    else:
+        print("\n  ❌  CHROME TIDAK DITEMUKAN di sistem!")
+        print("     Install dengan salah satu perintah berikut:")
+        print("       sudo apt update && sudo apt install -y google-chrome-stable")
+        print("       sudo apt install -y chromium-browser")
+        raise SystemExit(1)
+
+    # Coba webdriver_manager dulu; fallback ke chromedriver dari PATH
+    try:
+        service = Service(ChromeDriverManager().install())
+    except Exception:
+        print("  [ChromeDriver] webdriver_manager gagal, mencoba chromedriver dari PATH...")
+        cd_path = shutil.which("chromedriver")
+        if not cd_path:
+            print("  ❌  chromedriver tidak ditemukan di PATH.")
+            print("     Install: sudo apt install -y chromium-driver")
+            raise SystemExit(1)
+        service = Service(cd_path)
+
+    try:
+        return webdriver.Chrome(service=service, options=opts)
+    except Exception as e:
+        print(f"\n  ❌  Gagal membuka Chrome: {e}")
+        print("\n  Coba diagnosa manual di terminal:")
+        print("    google-chrome --version")
+        print("    chromedriver --version")
+        print("    google-chrome --headless --no-sandbox --disable-dev-shm-usage --dump-dom https://example.com")
+        raise
+>>>>>>> Stashed changes
 
 
 # ── Scraper ───────────────────────────────────────────────────────────────────
@@ -252,9 +326,15 @@ def run_scraper(cfg: dict):
                     if price is None:
                         continue
                     if min_price is not None and price < min_price:
+<<<<<<< Updated upstream
                         continue
                     if max_price is not None and price > max_price:
                         continue
+=======
+                        continue
+                    if max_price is not None and price > max_price:
+                        continue
+>>>>>>> Stashed changes
 
                     all_scraped_data.append({
                         "Tanggal Stay":  f"{checkin} to {checkout}",
