@@ -1,0 +1,30 @@
+2026-05-29 13:39:47,133 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: green-lava-luxury-glamping-bedugul
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-05-29 13:39:47,134 - root - INFO - Creating URLs
+2026-05-29 13:39:47,134 - root - INFO - Checking max offset parameter value
+2026-05-29 13:39:48,015 - root - INFO - Offset parameter max value: 40
+2026-05-29 13:39:48,019 - root - INFO - Created URLs: 5
+2026-05-29 13:39:48,019 - root - INFO - Progress Monitoring Thread Started
+2026-05-29 13:39:48,019 - root - INFO - Starting Get Requests on 5 urls
+2026-05-29 13:39:48,329 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=&offset=40
+2026-05-29 13:39:48,333 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=&offset=30
+2026-05-29 13:39:48,334 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=&offset=20
+2026-05-29 13:39:48,335 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=
+2026-05-29 13:39:48,586 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=&offset=30
+2026-05-29 13:39:48,868 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=green-lava-luxury-glamping-bedugul&rows=10&sort=&offset=30
+2026-05-29 13:39:48,981 - root - INFO - Finished Get Requests in 1.0 seconds
+2026-05-29 13:39:48,981 - root - INFO - Starting Parsing Responses: 5
+2026-05-29 13:39:49,002 - root - INFO - Processes launched: 5
+2026-05-29 13:39:49,136 - root - INFO - Finished Parsing Responses: 38 in 1.1 seconds
+2026-05-29 13:39:49,145 - root - INFO - Process complete 2.0 seconds
+2026-05-29 13:39:49,145 - root - INFO - Reviews found: 38
+2026-05-29 13:39:50,022 - root - INFO - Processed 5/5
