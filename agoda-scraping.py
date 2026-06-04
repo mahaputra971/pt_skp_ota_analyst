@@ -15,7 +15,8 @@ def scrape_agoda_pagination(url, output_filename=None):
         # Pastikan folder ada
         if not os.path.exists("dataset_agoda"):
             os.makedirs("dataset_agoda")
-        output_filename = f"dataset_agoda/{hotel_name}.csv"
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        output_filename = f"dataset_agoda/{hotel_name}_{timestamp}.csv"
 
     unique_reviews = set() 
     reviews_data = []
