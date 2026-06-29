@@ -1,0 +1,27 @@
+2026-06-23 11:39:51,894 - root - INFO - 
+
+******** Input Params ********
+-->  country: id
+-->  hotel_name: daun-lebar-villas
+-->  sort_by: most_relevant
+-->  n_rows: -1
+-->  stop_critera: None
+************************
+
+
+2026-06-23 11:39:51,894 - root - INFO - Creating URLs
+2026-06-23 11:39:51,894 - root - INFO - Checking max offset parameter value
+2026-06-23 11:39:52,662 - root - INFO - No offset parameter found
+2026-06-23 11:39:52,664 - root - INFO - Created URLs: 1
+2026-06-23 11:39:52,664 - root - INFO - Progress Monitoring Thread Started
+2026-06-23 11:39:52,664 - root - INFO - Starting Get Requests on 1 urls
+2026-06-23 11:39:53,792 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=daun-lebar-villas&rows=10&sort=
+2026-06-23 11:39:54,518 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=daun-lebar-villas&rows=10&sort=
+2026-06-23 11:39:55,304 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=id&pagename=daun-lebar-villas&rows=10&sort=
+2026-06-23 11:39:55,305 - root - INFO - Finished Get Requests in 2.6 seconds
+2026-06-23 11:39:55,305 - root - INFO - Starting Parsing Responses: 1
+2026-06-23 11:39:55,309 - root - INFO - Processes launched: 1
+2026-06-23 11:39:55,402 - root - INFO - Finished Parsing Responses: 0 in 2.7 seconds
+2026-06-23 11:39:55,406 - root - INFO - Process complete 3.5 seconds
+2026-06-23 11:39:55,406 - root - INFO - Reviews found: 0
+2026-06-23 11:39:56,676 - root - INFO - Processed 1/1

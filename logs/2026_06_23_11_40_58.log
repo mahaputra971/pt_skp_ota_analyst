@@ -1,0 +1,24 @@
+2026-06-23 11:40:58,949 - root - INFO - 
+
+******** Input Params ********
+-->  country: us
+-->  hotel_name: daun-lebar-villas
+-->  sort_by: newest_first
+-->  n_rows: 20
+-->  stop_critera: None
+************************
+
+
+2026-06-23 11:40:58,950 - root - INFO - Creating URLs
+2026-06-23 11:40:58,950 - root - INFO - Checking max offset parameter value
+2026-06-23 11:40:59,946 - root - INFO - No offset parameter found
+2026-06-23 11:40:59,947 - root - INFO - Created URLs: 1
+2026-06-23 11:40:59,948 - root - INFO - Progress Monitoring Thread Started
+2026-06-23 11:40:59,948 - root - INFO - Starting Conditional Scraping on 1 urls
+2026-06-23 11:41:01,165 - root - WARNING - Retrying 1 ... https://www.booking.com/reviewlist.en-gb.html?cc1=us&pagename=daun-lebar-villas&rows=10&sort=f_recent_desc
+2026-06-23 11:41:02,102 - root - WARNING - Retrying 2 ... https://www.booking.com/reviewlist.en-gb.html?cc1=us&pagename=daun-lebar-villas&rows=10&sort=f_recent_desc
+2026-06-23 11:41:02,825 - root - WARNING - Retrying 3 ... https://www.booking.com/reviewlist.en-gb.html?cc1=us&pagename=daun-lebar-villas&rows=10&sort=f_recent_desc
+2026-06-23 11:41:02,887 - root - INFO - Finished Conditional Scraping: 0 in 2.9 seconds
+2026-06-23 11:41:02,889 - root - INFO - Process complete 3.9 seconds
+2026-06-23 11:41:02,889 - root - INFO - Reviews found: 0
+2026-06-23 11:41:03,954 - root - INFO - Processed 1/1
