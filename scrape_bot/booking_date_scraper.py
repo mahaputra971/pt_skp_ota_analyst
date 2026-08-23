@@ -1,7 +1,5 @@
-import os
 import time
 import re
-import shutil
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 
@@ -160,43 +158,43 @@ def generate_unique_filename(location: str, prefix: str = "booking") -> str:
 
 
 def generate_date_ranges(start_date: str, end_date: str) -> List[tuple]:
-    """Menghasilkan list tuple berisi (checkin_date, checkout_date) dengan rentang 1 hari."""
-    start = datetime.strptime(start_date, "%Y-%m-%d")
-    end = datetime.strptime(end_date, "%Y-%m-%d")
-    
-    date_ranges = []
-    current_date = start
-    
-    while current_date < end:
-        next_date = current_date + timedelta(days=1)
-        date_ranges.append((current_date.strftime("%Y-%m-%d"), next_date.strftime("%Y-%m-%d")))
-        current_date = next_date
-        
-    return date_ranges
+    start   = datetime.strptime(start_date, "%Y-%m-%d")
+    end     = datetime.strptime(end_date,   "%Y-%m-%d")
+    ranges  = []
+    current = start
+    while current < end:
+        next_day = current + timedelta(days=1)
+        ranges.append((current.strftime("%Y-%m-%d"), next_day.strftime("%Y-%m-%d")))
+        current = next_day
+    return ranges
+
 
 def setup_driver() -> webdriver.Chrome:
-    """Menginisiasi Selenium Chrome Driver."""
-    chrome_options = Options()
-    # Hapus tanda '#' pada baris di bawah ini jika ingin menjalankan tanpa membuka browser (background)
-    # chrome_options.add_argument("--headless=new") 
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-    
+    opts = Options()
+    # Uncomment baris berikut untuk mode headless (tanpa buka browser):
+    # opts.add_argument("--headless=new")
+    opts.add_argument("--disable-gpu")
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--window-size=1920,1080")
+    opts.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    )
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    return driver
+    return webdriver.Chrome(service=service, options=opts)
 
-@app.command()
-def scrape_booking(
-    location: Annotated[str, typer.Option(help="Nama lokasi pencarian")] = "Balian Beach",
-    start_date: Annotated[str, typer.Option(help="Tanggal mulai (Format: YYYY-MM-DD)")] = "2026-04-01",
-    end_date: Annotated[str, typer.Option(help="Tanggal selesai (Format: YYYY-MM-DD)")] = "2026-04-30",
-    max_properties: Annotated[int, typer.Option(help="Maksimal property per tanggal")] = 15,
-    max_price: Annotated[Optional[int], typer.Option(help="Batas maksimal harga property dalam Rupiah (contoh: 1500000)")] = None, # PARAMETER BARU
-    output_file: Annotated[str, typer.Option(help="Nama file Excel output")] = "booking_competitors.xlsx"
-):
+
+# ── Scraper ───────────────────────────────────────────────────────────────────
+
+def run_scraper(cfg: dict):
+    location       = cfg["location"]
+    start_date     = cfg["start_date"]
+    end_date       = cfg["end_date"]
+    max_properties = cfg["max_properties"]
+    min_price      = cfg["min_price"]
+    max_price      = cfg["max_price"]
+    output_file    = cfg["output_file"]
+
     dates = generate_date_ranges(start_date, end_date)
     print_summary(cfg, len(dates))
 
@@ -249,16 +247,15 @@ def scrape_booking(
                         price_clean = re.sub(r'[^\d]', '', price_el.text.strip())
                         price       = int(price_clean) if price_clean else None
                     except Exception:
-                        final_price = None
-                    
-                    # Jika gagal mendapatkan harga numerik (misal sold out), lewati saja agar tidak merusak filter
-                    if final_price is None:
+                        price = None
+
+                    if price is None:
                         continue
-                    
-                    # LOGIKA FILTER HARGA (PARAMETER BARU)
-                    if max_price is not None and final_price > max_price:
-                        continue # Lewati jika harga melebihi batas maksimal yang diinginkan
-                    
+                    if min_price is not None and price < min_price:
+                        continue
+                    if max_price is not None and price > max_price:
+                        continue
+
                     all_scraped_data.append({
                         "Tanggal Stay":  f"{checkin} to {checkout}",
                         "Check-in":      checkin,
